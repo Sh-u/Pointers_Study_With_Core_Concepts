@@ -2,6 +2,8 @@
 name = "Pointers_Study_With_Core_Concepts"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "A study on rust smart pointers, with their essential concepts documented."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
