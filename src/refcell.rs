@@ -1,4 +1,4 @@
-//! # A basic custom implementation of a ref cell a mutable memory location
+//! # Basic implementation of a RefCell mutable memory location
 //! With most essential info about it
 
 use crate::cell::MyCell;
@@ -7,7 +7,7 @@ use std::{
     ops::{Deref, DerefMut},
 };
 
-/// # Required to wrap value<T> in UnsafeCell
+/// # Required to wrap value T in UnsafeCell
 /// Because you are never allowed to cast a shared ref to an exclusive ref
 /// in other way than by going through the unsafe cell.
 
@@ -15,10 +15,10 @@ use std::{
 /// Will give us ability to mutate Enum's reference count through a shared reference
 
 /// # Info
-/// RefCell Will enforce borrow rules on runtime
+/// RefCell will enforce borrow rules at runtime.
 
 /// # Common Usage
-/// A safe way to dynamically borrow data
+/// A fairly safe way to dynamically borrow data
 /// e.g Node in a graph/tree.
 
 pub struct MyRefCell<T> {
